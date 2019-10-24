@@ -3,13 +3,19 @@ import PropTypes from "prop-types";
 
 import RandomNumber from "../../services/random-number";
 
-const Dice = ({ faces }) => {
+const Dice = ({ faces, callback }) => {
   const max = faces.length;
   const button = React.createRef();
-  const [face, setFace] = React.useState(faces[RandomNumber(max)])
+  const [face, setFace] = React.useState(faces[RandomNumber(max)]);
 
   const rollDice = () => {
-    setFace(faces[RandomNumber(max)])
+    const randomIndex = RandomNumber(max);
+    const newValue = faces[randomIndex];
+    setFace(newValue);
+    callback({
+      id: randomIndex,
+      color: newValue
+    });
   };
 
   return (
