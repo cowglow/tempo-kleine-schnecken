@@ -7,9 +7,6 @@ import "./app.styles.css";
 const App = () => {
   return (
     <div className="App">
-      <p>
-        tempo-kleine-schnecken <button>Button</button>
-      </p>
       <header className="App-content">
         <Screen />
       </header>

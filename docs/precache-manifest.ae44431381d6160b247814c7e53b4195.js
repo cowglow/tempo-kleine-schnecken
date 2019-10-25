@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7226cfb43a5ba2e3e48ec3ce44a9f19",
+    "revision": "b2568e4441c45a0ad022373a7828415d",
     "url": "/tempo-kleine-schnecken/index.html"
   },
   {
-    "revision": "761ba3999b72d2371ce0",
-    "url": "/tempo-kleine-schnecken/static/css/main.0d0f3792.chunk.css"
+    "revision": "b82c860fd4175f46bb4b",
+    "url": "/tempo-kleine-schnecken/static/css/main.9d928ecd.chunk.css"
   },
   {
-    "revision": "07d675cf9121e6e8a0ba",
-    "url": "/tempo-kleine-schnecken/static/js/2.bac84c04.chunk.js"
+    "revision": "c71c22eeca7d58355b98",
+    "url": "/tempo-kleine-schnecken/static/js/2.83140c6d.chunk.js"
   },
   {
-    "revision": "761ba3999b72d2371ce0",
-    "url": "/tempo-kleine-schnecken/static/js/main.c0e6df54.chunk.js"
+    "revision": "b82c860fd4175f46bb4b",
+    "url": "/tempo-kleine-schnecken/static/js/main.b6fa4699.chunk.js"
   },
   {
     "revision": "8403485965d0ed3d7a13",

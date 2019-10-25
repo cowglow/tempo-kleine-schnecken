@@ -9,7 +9,7 @@ const Snail = ({ color }) => {
         backgroundColor: color,
         verticalAlign: "center",
         display: "inline-block",
-        padding: "5rem",
+        padding: "2rem",
         "-webkit-mask": 'url("' + snailSvg + '") no-repeat 50% 50%',
         mask: 'url("' + snailSvg + '") no-repeat 50% 50%'
       }}

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tempo-kleine-schnecken/precache-manifest.11c6afb53e204570194595fe8fe6fcc5.js"
+  "/tempo-kleine-schnecken/precache-manifest.ae44431381d6160b247814c7e53b4195.js"
 );
 
 self.addEventListener('message', (event) => {
