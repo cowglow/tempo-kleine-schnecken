@@ -6,7 +6,7 @@ import RandomNumber from "../../services/random-number";
 const Dice = ({ faces, callback }) => {
   const max = faces.length;
   const button = React.createRef();
-  const [face, setFace] = React.useState(faces[RandomNumber(max)]);
+  const [face, setFace] = React.useState('#000000');
 
   const rollDice = () => {
     const randomIndex = RandomNumber(max);
@@ -23,7 +23,7 @@ const Dice = ({ faces, callback }) => {
       ref={button}
       onClick={rollDice}
       style={{
-        padding: "1rem",
+        padding: "2rem 1rem",
         color: "#ffffff",
         backgroundColor: face,
         ":active": {

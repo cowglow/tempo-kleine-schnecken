@@ -30,8 +30,6 @@ const Screen = () => {
 
   return (
     <React.Fragment>
-      <Dice faces={colors} callback={rollDice} />
-
       {colors.map((color, index) => (
         <Track
           steps={stepCount}
@@ -40,6 +38,8 @@ const Screen = () => {
           player={<Snail color={color} />}
         />
       ))}
+
+      <Dice faces={colors} callback={rollDice} />
     </React.Fragment>
   );
 };
