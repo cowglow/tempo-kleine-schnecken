@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tempo-kleine-schnecken/static/css/main.cc38cb6a.chunk.css",
+    "main.js": "/tempo-kleine-schnecken/static/js/main.f2943b5a.chunk.js",
+    "main.js.map": "/tempo-kleine-schnecken/static/js/main.f2943b5a.chunk.js.map",
+    "runtime-main.js": "/tempo-kleine-schnecken/static/js/runtime-main.4f09194e.js",
+    "runtime-main.js.map": "/tempo-kleine-schnecken/static/js/runtime-main.4f09194e.js.map",
+    "static/js/2.060c3828.chunk.js": "/tempo-kleine-schnecken/static/js/2.060c3828.chunk.js",
+    "static/js/2.060c3828.chunk.js.map": "/tempo-kleine-schnecken/static/js/2.060c3828.chunk.js.map",
+    "index.html": "/tempo-kleine-schnecken/index.html",
+    "precache-manifest.9e9bb160be9c02b4fa3f4866e4ac1480.js": "/tempo-kleine-schnecken/precache-manifest.9e9bb160be9c02b4fa3f4866e4ac1480.js",
+    "service-worker.js": "/tempo-kleine-schnecken/service-worker.js",
+    "static/css/main.cc38cb6a.chunk.css.map": "/tempo-kleine-schnecken/static/css/main.cc38cb6a.chunk.css.map",
+    "static/media/snail-silhouette.svg": "/tempo-kleine-schnecken/static/media/snail-silhouette.90401f08.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f09194e.js",
+    "static/js/2.060c3828.chunk.js",
+    "static/css/main.cc38cb6a.chunk.css",
+    "static/js/main.f2943b5a.chunk.js"
+  ]
+}
