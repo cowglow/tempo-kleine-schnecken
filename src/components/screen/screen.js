@@ -5,41 +5,58 @@ import colors from "../../fixtures/colors";
 import Dice from "../dice/dice";
 import Snail from "../snail/snail";
 import Track from "../track/track";
+import Winner from "../winner/winner";
+
+// const stepCount = 7;
+const stepCount = 4;
+
+const config = {
+  colors: colors,
+  positions: Array.from(Array(stepCount - 1), () => 0)
+};
 
 const Screen = () => {
-  const stepCount = 7;
-
-  // eslint-disable-next-line
-  const [diceValue, updateDiceValue] = React.useState({
-    id: null,
-    color: null
+  const [state, setState] = React.useState({
+    positions: config.positions,
+    winner: null
   });
 
-  // eslint-disable-next-line
-  const [positions, updatePositions] = React.useState(
-    Array.from(Array(stepCount), () => 0)
-  );
-
   const rollDice = face => {
-    const newPositions = positions;
+    // Previous values
+    const updatedPositions = {
+      ...state
+    };
 
-    newPositions[face.id] = newPositions[face.id] + 1;
-    // updatePositions(newPositions);
-    updateDiceValue(face);
+    // Updated value
+    updatedPositions.positions[face.id] = state.positions[face.id] + 1;
+
+    // Validate positions
+    const winnerPosition = updatedPositions.positions.indexOf(stepCount - 1);
+    if (winnerPosition >= 0) {
+      updatedPositions.winner = winnerPosition;
+    }
+
+    // Set state
+    setState(updatedPositions);
   };
 
   return (
     <React.Fragment>
-      {colors.map((color, index) => (
+      <Winner>
+        <Snail color={config.colors[state.winner]} />
+      </Winner>
+
+      {config.colors.slice(0, stepCount -1).map((color, index) => (
         <Track
+          key={index}
           steps={stepCount}
           color={color}
-          currentPosition={positions[index]}
+          currentPosition={state.positions[index]}
           player={<Snail color={color} />}
         />
       ))}
 
-      <Dice faces={colors} callback={rollDice} />
+      <Dice faces={colors.slice(0, stepCount -1)} callback={rollDice} />
     </React.Fragment>
   );
 };
