@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import style from "./dice.module.css";
+
 import RandomNumber from "../../services/random-number";
 
 const Dice = ({ faces, callback }) => {
   const max = faces.length;
   const button = React.createRef();
-  const [face, setFace] = React.useState('#000000');
+  const [face, setFace] = React.useState("#000000");
 
   const rollDice = () => {
     const randomIndex = RandomNumber(max);
@@ -23,13 +25,9 @@ const Dice = ({ faces, callback }) => {
       ref={button}
       onClick={rollDice}
       style={{
-        padding: "2rem 1rem",
-        color: "#ffffff",
         backgroundColor: face,
-        ":active": {
-          color: "#000000"
-        }
       }}
+      className={style.root}
     >
       Click To Roll
     </button>
