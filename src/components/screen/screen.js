@@ -7,8 +7,7 @@ import Snail from "../snail/snail";
 import Track from "../track/track";
 import Winner from "../winner/winner";
 
-// const stepCount = 7;
-const stepCount = 4;
+const stepCount = 7;
 
 const config = {
   colors: colors,
