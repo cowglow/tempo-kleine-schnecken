@@ -10,9 +10,13 @@ const Winner = ({ children }) => {
     showWinner = {
       opacity: 1
     };
+
+    const button = document.getElementsByTagName("button");
+    button[0].setAttribute("disabled", 'true');
+
     setTimeout(() => {
       window.location.reload();
-    }, 300);
+    }, 8000);
   }
 
   return (

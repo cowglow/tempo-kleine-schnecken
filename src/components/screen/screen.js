@@ -45,7 +45,7 @@ const Screen = () => {
         <Snail color={config.colors[state.winner]} />
       </Winner>
 
-      {config.colors.slice(0, stepCount -1).map((color, index) => (
+      {config.colors.slice(0, stepCount - 1).map((color, index) => (
         <Track
           key={index}
           steps={stepCount}
@@ -55,7 +55,7 @@ const Screen = () => {
         />
       ))}
 
-      <Dice faces={colors.slice(0, stepCount -1)} callback={rollDice} />
+      <Dice faces={colors.slice(0, stepCount - 1)} callback={rollDice} />
     </React.Fragment>
   );
 };
