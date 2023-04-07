@@ -9,6 +9,7 @@
     "react-scripts": "^4.0.1"
   },
   "scripts": {
+    "dev": "docker compose run --service-ports app bash",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "yarn build",
